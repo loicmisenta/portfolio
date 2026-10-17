@@ -1,0 +1,205 @@
+{
+  "email": "misentaloic@gmail.com",
+  "github": "https://github.com/loicmisenta",
+  "linkedin": "https://www.linkedin.com/in/loic-misenta/",
+  "journey": [
+    {
+      "start": "2025",
+      "end": "2027",
+      "period": "2025 — 2027 (EXPECTED)",
+      "title": "EPFL — Master in Data Science",
+      "text": "Master’s degree in Data Science, Lausanne.",
+      "fr": {
+        "period": "2025 — 2027 (PRÉVU)",
+        "title": "EPFL — Master en Data Science",
+        "text": "Master en Data Science, Lausanne."
+      }
+    },
+    {
+      "period": "SUMMER 2025 — PRESENT",
+      "start": "2025",
+      "title": "Botafogo — EPFL",
+      "text": "Development of the language-model pipeline for student questions: expanded context, response processing and the Botafogo chatbot launched with Jérémy Barghorn in December 2025.",
+      "fr": {
+        "period": "ÉTÉ 2025 — AUJOURD’HUI",
+        "title": "Botafogo — EPFL",
+        "text": "Développement de la pipeline de modèles de langage pour les questions étudiantes : contexte étendu, traitement des réponses et chatbot Botafogo mis en ligne avec Jérémy Barghorn en décembre 2025."
+      }
+    },
+    {
+      "start": "2023-09",
+      "period": "SEP 2023 — PRESENT · PART-TIME",
+      "title": "Lausanne Université Club — Badminton coach",
+      "text": "Planning and leading training sessions for club members in Renens.",
+      "fr": {
+        "period": "SEPT. 2023 — AUJOURD’HUI · TEMPS PARTIEL",
+        "title": "Lausanne Université Club — Entraîneur de badminton",
+        "text": "Organisation et encadrement des séances d’entraînement des membres du club à Renens."
+      }
+    },
+    {
+      "start": "2022-02",
+      "period": "FEB 2022 — PRESENT · PART-TIME",
+      "title": "Sport Santé UNIL+EPFL — Badminton coach",
+      "text": "Supervising open-play sessions and coaching students of different levels at the Dorigny sports centre.",
+      "fr": {
+        "period": "FÉVR. 2022 — AUJOURD’HUI · TEMPS PARTIEL",
+        "title": "Sport Santé UNIL+EPFL — Entraîneur de badminton",
+        "text": "Supervision des sessions de jeu libre et entraînements adaptés aux différents niveaux des étudiants au Centre sportif de Dorigny."
+      }
+    },
+    {
+      "start": "2024-07",
+      "end": "2024-11",
+      "period": "JUL — NOV 2024",
+      "title": "Swiss Armed Forces — Reconnaissance soldier",
+      "text": "Military service in Bière. Training in reconnaissance, observation and information gathering.",
+      "fr": {
+        "period": "JUIL. — NOV. 2024",
+        "title": "Armée suisse — Explorateur",
+        "text": "Service militaire à Bière. Formation à la reconnaissance, à l’observation et à la collecte d’informations."
+      }
+    },
+    {
+      "start": "2020-09",
+      "end": "2024-09",
+      "period": "SEP 2020 — SEP 2024",
+      "title": "EPFL — Bachelor in Computer Science",
+      "text": "Bachelor’s degree in Computer Science, Lausanne.",
+      "fr": {
+        "period": "SEPT. 2020 — SEPT. 2024",
+        "title": "EPFL — Bachelor en informatique",
+        "text": "Bachelor en informatique, Lausanne."
+      }
+    },
+    {
+      "start": "2020-08",
+      "end": "2024-07",
+      "period": "AUG 2020 — JUL 2024 · PART-TIME",
+      "title": "Déchetterie d’Orbe — Recycling centre assistant",
+      "text": "Welcoming visitors, checking incoming materials and directing users to the appropriate sorting areas while ensuring safety procedures are followed.",
+      "fr": {
+        "period": "AOÛT 2020 — JUIL. 2024 · TEMPS PARTIEL",
+        "title": "Déchetterie d’Orbe — Auxiliaire de déchetterie",
+        "text": "Accueil des usagers, vérification des apports et orientation vers les zones de tri, dans le respect des règles de sécurité."
+      }
+    },
+    {
+      "start": "2021",
+      "end": "2023",
+      "period": "2021 — 2023 · PART-TIME",
+      "title": "Apprentus — Mathematics tutor",
+      "text": "Private mathematics lessons for pupils from school to upper-secondary level.",
+      "fr": {
+        "period": "2021 — 2023 · TEMPS PARTIEL",
+        "title": "Apprentus — Professeur particulier de mathématiques",
+        "text": "Cours particuliers de mathématiques pour des élèves de l’école au gymnase."
+      }
+    },
+    {
+      "start": "2017-09",
+      "end": "2020-07",
+      "period": "SEP 2017 — JUL 2020",
+      "title": "Gymnase d’Yverdon — Maturité",
+      "text": "Swiss upper-secondary qualification, with a focus on applied mathematics.",
+      "fr": {
+        "period": "SEPT. 2017 — JUIL. 2020",
+        "title": "Gymnase d’Yverdon — Maturité",
+        "text": "Maturité, orientation mathématiques appliquées."
+      }
+    },
+    {
+      "start": "2015-09",
+      "end": "2017-07",
+      "period": "SEP 2015 — JUL 2017 · PART-TIME",
+      "title": "BC Orbe — Badminton coach",
+      "text": "Coaching young beginners through playful sessions focused on basic badminton skills and coordination.",
+      "fr": {
+        "period": "SEPT. 2015 — JUIL. 2017 · TEMPS PARTIEL",
+        "title": "BC Orbe — Entraîneur de badminton",
+        "text": "Encadrement de jeunes débutants, avec des séances ludiques pour développer les bases du badminton et la coordination."
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "lernnavi",
+      "title": "Lernnavi — Disengagement Prediction",
+      "category": "APPLIED MACHINE LEARNING",
+      "summary": "Predicting disengagement on a Swiss learning platform.",
+      "tags": [
+        "LightGBM",
+        "PyTorch / LSTM",
+        "Fairness"
+      ],
+      "problem": "Lernnavi has no course end date or dropout label. The task is to distinguish sustained inactivity from school holidays.",
+      "architecture": "A two-stage pipeline predicts whether learners return after three weeks, then whether they enter an interruption of at least four weeks. Logistic regression, LightGBM and LSTM models are compared using twelve-week sequences, ablations and fairness analysis.",
+      "impact": "The best Stage 2 model achieves an AUC-ROC of 0.9125, as reported in the README. Calendar features are important. Differences across cantons require careful interpretation; predictions are intended to support human decisions.",
+      "code": "https://github.com/loicmisenta/CS-421-Project-learnavi",
+      "fr": {
+        "title": "Lernnavi — Disengagement Prediction",
+        "category": "APPLIED MACHINE LEARNING",
+        "summary": "Prédiction du désengagement sur une plateforme d’apprentissage suisse.",
+        "problem": "Sur Lernnavi, il n’existe ni fin de cours ni label d’abandon. Comment distinguer une interruption durable d’une pause scolaire ?",
+        "architecture": "Pipeline en deux étapes : retour après trois semaines, puis interruption d’au moins quatre semaines. Comparaison régression logistique, LightGBM et LSTM sur des séquences de douze semaines ; ablations et audit d’équité.",
+        "impact": "AUC-ROC de 0,9125 pour le meilleur modèle de l’étape 2, selon le README. Les variables calendaires sont déterminantes. Les écarts entre cantons imposent une interprétation prudente ; l’outil reste une aide à la décision humaine."
+      }
+    },
+    {
+      "id": "rlhf",
+      "title": "Reinforcement Learning from Human Feedback",
+      "category": "REINFORCEMENT LEARNING",
+      "summary": "Comparing PPO-RLHF and DPO on CartPole and Pendulum.",
+      "tags": [
+        "PyTorch",
+        "PPO / DPO",
+        "Gymnasium"
+      ],
+      "problem": "How does the amount of preference data affect the learning of a control policy?",
+      "architecture": "Comparison of PPO-RLHF with a reward model and DPO without an explicit reward model. Paired trajectories and Bradley–Terry preferences are used, followed by evaluation on twenty distinct seeds in CartPole and Pendulum.",
+      "impact": "Evaluation across twenty distinct seeds in discrete and continuous control environments. A group project with Martina Gatti and Bryan Gotti (EPFL, EE-568). Notebooks, poster and report are available in the repository.",
+      "code": "https://github.com/mgatti03/EE-568-Reinforcement-Project",
+      "fr": {
+        "title": "Reinforcement Learning from Human Feedback",
+        "category": "REINFORCEMENT LEARNING",
+        "summary": "Comparaison de PPO-RLHF et DPO sur CartPole et Pendulum.",
+        "problem": "Comment la quantité de préférences disponibles influence-t-elle l’apprentissage d’une politique de contrôle ?",
+        "architecture": "Comparaison PPO-RLHF avec modèle de récompense et DPO sans modèle explicite. Paires de trajectoires, préférences Bradley–Terry, puis évaluation sur vingt seeds distinctes dans CartPole et Pendulum.",
+        "impact": "Évaluation sur vingt seeds distinctes, dans des environnements de contrôle discret et continu. Projet collectif avec Martina Gatti et Bryan Gotti (EPFL, EE-568). Notebooks, poster et rapport disponibles dans le dépôt."
+      }
+    },
+    {
+      "id": "forklift",
+      "title": "Autonomous Forklift",
+      "category": "ROBOTICS / EMBEDDED",
+      "summary": "An autonomous forklift with QR code recognition and web controls.",
+      "tags": [
+        "ESP32-CAM",
+        "Arduino",
+        "Web control"
+      ],
+      "problem": "Automate the transport of a package to a destination encoded in a QR code.",
+      "architecture": "Camera-based QR recognition, ESP32/ESP8266/Arduino electronics, stepper motors and Mecanum wheels. Autonomous operation with gamepad and web controls.",
+      "impact": "Hardware and software prototype built by a team of six for the EPFL CS-356 course. The repository documents the fabrication, components and operation of the system.",
+      "code": "https://github.com/loicmisenta/Autonomous_Forklift",
+      "fr": {
+        "title": "Autonomous Forklift",
+        "category": "ROBOTICS / EMBEDDED",
+        "summary": "Chariot élévateur autonome avec lecture de QR codes et commande web.",
+        "problem": "Automatiser le déplacement d’un colis vers une destination encodée dans un QR code.",
+        "architecture": "Caméra et lecture QR, électronique ESP32/ESP8266/Arduino, moteurs pas-à-pas et roues Mecanum. Commande autonome, manette et application web.",
+        "impact": "Prototype matériel et logiciel réalisé en équipe de six pour le cours CS-356 à l’EPFL. Le dépôt documente la fabrication, les composants et le fonctionnement du système."
+      }
+    }
+  ],
+  "entries": [],
+  "tracks": [
+    {
+      "id": "dbffe486-dc47-4324-9d3e-e42025e5dc67",
+      "title": "OWLY - Take Me Higher",
+      "note": "",
+      "audio": "/media/777abd68-45e5-4188-852e-2da6f9a8fc34.mp3",
+      "fr": {}
+    }
+  ]
+}

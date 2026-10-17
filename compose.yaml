@@ -1,0 +1,12 @@
+services:
+  portfolio:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3001:3001"
+    volumes:
+      - portfolio-data:/app/data
+    environment:
+      COOKIE_SECURE: "${COOKIE_SECURE:-false}"
+volumes:
+  portfolio-data:
