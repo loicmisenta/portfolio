@@ -10,3 +10,9 @@ test('newest releases first, legacy years and undated tracks preserved',()=>{
  assert.deepEqual(sortTracks(tracks).map(t=>t.id),['oct','june','year','old','unknown','unknown2']);
  assert.equal(tracks[0].id,'unknown');
 });
+
+import {validYoutubeUrl} from '../lib/tracks.mjs';
+test('YouTube links allow HTTPS YouTube hosts only',()=>{
+ for(const url of ['https://youtu.be/rNuTLGLnu8s','https://www.youtube.com/watch?v=rNuTLGLnu8s']) assert.equal(validYoutubeUrl(url),true);
+ for(const url of ['javascript:alert(1)','https://youtube.com.evil.example/video','http://youtu.be/test','https://user:pass@youtube.com/video','bad']) assert.equal(validYoutubeUrl(url),false);
+});

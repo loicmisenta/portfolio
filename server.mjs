@@ -1,4 +1,4 @@
-import { validReleaseDate } from './lib/tracks.mjs';
+import { validReleaseDate, validYoutubeUrl } from './lib/tracks.mjs';
 import http from 'node:http';
 import { createReadStream, createWriteStream } from 'node:fs';
 import { readFile, writeFile, mkdir, stat, rename, unlink } from 'node:fs/promises';
@@ -41,7 +41,7 @@ function validate(c){
   for(const key of ['projects','entries','tracks']){const ids=new Set();for(const x of c[key]){if(!x||!validText(x.id,100)||!x.id||ids.has(x.id)||!validText(x.title,250)||!x.title.trim())throw fail('Titre ou identifiant invalide.');ids.add(x.id);}}
   for(const p of c.projects)if(!['category','summary','problem','architecture','impact'].every(k=>validText(p[k]))||!Array.isArray(p.tags)||p.tags.length>30||!p.tags.every(t=>validText(t,100))||!validUrl(p.code)||!validUrl(p.video)||!validUrl(p.cover))throw fail('Projet invalide.');
   for(const e of c.entries)if(!validText(e.text)||!/^\d{4}-\d{2}-\d{2}$/.test(e.date)||Number.isNaN(Date.parse(e.date))||!validUrl(e.video))throw fail('Note invalide.');
-  for(const t of c.tracks)if((t.releaseDate!==undefined&&!validReleaseDate(t.releaseDate))||(t.year!==undefined&&(typeof t.year!=='string'||!/^\d{4}$/.test(t.year)))||!validText(t.note)||!t.audio||!validUrl(t.audio)||!validUrl(t.cover))throw fail('Morceau invalide.');
+  for(const t of c.tracks)if((t.youtube!==undefined&&!validYoutubeUrl(t.youtube))||(t.releaseDate!==undefined&&!validReleaseDate(t.releaseDate))||(t.year!==undefined&&(typeof t.year!=='string'||!/^\d{4}$/.test(t.year)))||!validText(t.note)||!t.audio||!validUrl(t.audio)||!validUrl(t.cover))throw fail('Morceau invalide.');
   for(const j of c.journey){if(!['period','title','text'].every(k=>validText(j[k])))throw fail('Parcours invalide.');for(const key of ['start','end'])if(j[key]&&!/^\d{4}(-(?:0[1-9]|1[0-2]))?$/.test(j[key]))throw fail('Date de parcours invalide (AAAA ou AAAA-MM).');if(j.end&&!j.start)throw fail('Renseignez une date de début.');if(j.start&&j.end&&j.end.slice(0,4)<j.start.slice(0,4))throw fail('La fin doit suivre le début.');}
 }
 async function serveFile(req,res,filename){
