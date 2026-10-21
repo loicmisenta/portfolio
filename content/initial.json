@@ -195,9 +195,42 @@
   "entries": [],
   "tracks": [
     {
+      "id": "714e5667-d0aa-4414-bf19-57eba48e9589",
+      "title": "OWLY - Dusk",
+      "note": "",
+      "year": "2025",
+      "audio": "/media/57aee0b9-7eab-4e46-b09f-05ddff75e6a9.mp3",
+      "fr": {}
+    },
+    {
+      "id": "0ee02ca1-8d0f-456f-a3a3-e48b2cd2f218",
+      "title": "Daft Punk - Burnin' / Faster (Rework)",
+      "note": "",
+      "year": "2026",
+      "audio": "/media/8507e5c1-824b-42f0-a2ef-2201806db3a1.mp3",
+      "fr": {}
+    },
+    {
+      "id": "32c5dddf-ba85-4a1f-9192-ba48d33e3226",
+      "title": "Adèle Castillon - Été avec toi (Remix)",
+      "note": "",
+      "year": "2026",
+      "audio": "/media/8e94a34f-3d68-4140-8e7b-466235220c1e.mp3",
+      "fr": {}
+    },
+    {
+      "id": "daeb6884-5537-4694-86aa-35496a54dee7",
+      "title": "Daft Punk - Lose Yourself to Dance (Rework)",
+      "note": "",
+      "year": "2026",
+      "audio": "/media/1f555374-1d23-41ac-b53d-357902c66337.flac",
+      "fr": {}
+    },
+    {
       "id": "dbffe486-dc47-4324-9d3e-e42025e5dc67",
       "title": "OWLY - Take Me Higher",
       "note": "",
+      "year": "2025",
       "audio": "/media/777abd68-45e5-4188-852e-2da6f9a8fc34.mp3",
       "fr": {}
     }
