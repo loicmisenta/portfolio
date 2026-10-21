@@ -9,5 +9,5 @@ export default defineConfig({
   },
   css: { postcss: { plugins: [tailwindcss()] } },
   plugins: [vinext()],
-  server: { proxy: { '/api': 'http://127.0.0.1:3001', '/media': 'http://127.0.0.1:3001' } },
+  server: { proxy: { '/api': { target: 'http://127.0.0.1:3001', changeOrigin: false }, '/media': 'http://127.0.0.1:3001' } },
 });
