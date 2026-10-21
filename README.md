@@ -130,3 +130,5 @@ npm.cmd run build:pages
 Les tests utilisent des donn?es et d?p?ts temporaires isol?s. La commande npm run build reste disponible pour l?ancien export local dist/client ; GitHub Pages utilise build:pages. Le serveur local n?est jamais d?ploy? sur GitHub Pages.
 
 Sources et contexte des projets : voir content/SOURCES.md.
+
+Les waveforms OWLY sont calculées localement avec FFmpeg lors de l’enregistrement ou de l’export. FFmpeg doit être disponible dans le PATH du studio. Les données calculées sont incluses dans le contenu publié ; le navigateur charge l’audio seulement à la lecture (ou lors d’un déplacement dans le morceau). Sans FFmpeg, la lecture reste disponible avec une barre de progression.

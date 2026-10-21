@@ -1,4 +1,5 @@
 import { validReleaseDate, validYoutubeUrl } from './lib/tracks.mjs';
+import { prepareWaveforms } from './lib/audio-waveform.mjs';
 import http from 'node:http';
 import { createReadStream, createWriteStream } from 'node:fs';
 import { readFile, writeFile, mkdir, stat, rename, unlink } from 'node:fs/promises';
@@ -90,7 +91,7 @@ const server=http.createServer(async(req,res)=>{
       if(publication.state==='running')throw fail('Attendez la fin de la publication pour enregistrer.',409);
       const next=await body(req);validate(next);
       if(publication.state==='running')throw fail('Attendez la fin de la publication pour enregistrer.',409);
-      const operation=saveQueue.then(async()=>{const temp=contentPath+'.'+randomUUID()+'.tmp';await writeFile(temp,JSON.stringify(next,null,2));await rename(temp,contentPath);content=next;});saveQueue=operation.catch(()=>{});await operation;return json(res,200,{ok:true});
+      const operation=saveQueue.then(async()=>{for(const track of next.tracks){const previous=content.tracks.find(t=>t.id===track.id&&t.audio===track.audio);if(previous?.waveform)track.waveform=previous.waveform;else delete track.waveform;}await prepareWaveforms(next,[path.join(dataDir,'media')]);const temp=contentPath+'.'+randomUUID()+'.tmp';await writeFile(temp,JSON.stringify(next,null,2));await rename(temp,contentPath);content=next;});saveQueue=operation.catch(()=>{});await operation;return json(res,200,{ok:true});
     }
     if(route==='/api/upload'&&req.method==='POST'){
       if(!authorized(req))throw fail('Reconnectez-vous pour importer.',401);

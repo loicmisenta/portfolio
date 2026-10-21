@@ -1,3 +1,4 @@
+import { prepareWaveforms } from '../lib/audio-waveform.mjs';
 import { copyFile, mkdir, readFile, readdir, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -19,6 +20,7 @@ export async function exportPages({root = projectRoot, dataDir = path.resolve(pr
   try { source = await readFile(path.join(dataDir, 'content.json'), 'utf8'); }
   catch (error) { if (error.code !== 'ENOENT') throw error; source = await readFile(path.join(root, 'content/initial.json'), 'utf8'); }
   const content = JSON.parse(source);
+  await prepareWaveforms(content, [path.join(dataDir, 'media'), destination]);
   const files = mediaReferences(content);
   const copies = [];
   // Check every source before modifying the exported snapshot.
