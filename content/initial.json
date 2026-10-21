@@ -195,6 +195,69 @@
   "entries": [],
   "tracks": [
     {
+      "id": "7117daf3-828f-483f-8b70-3658591f8fdd",
+      "title": "OWLY - On The Real Side",
+      "note": "",
+      "year": "2026",
+      "releaseDate": "2026-04-04",
+      "audio": "/media/9f69058e-07cf-442f-9819-8010a77f298f.wav",
+      "fr": {}
+    },
+    {
+      "id": "a48d07ae-6150-4c08-aa1f-73a4f2414c5c",
+      "title": "Charlotte Cardin - Feel Good (Remix)",
+      "note": "",
+      "year": "2025",
+      "releaseDate": "2025-05-27",
+      "audio": "/media/d5e2b46f-21f4-4809-8b77-890eb222c467.mp3",
+      "fr": {}
+    },
+    {
+      "id": "94e0c451-2446-41c5-8188-97d305f2a235",
+      "title": "Imagine Dragons - Nice to Meet You (Remix)",
+      "note": "",
+      "year": "2025",
+      "releaseDate": "2025-07-08",
+      "audio": "/media/527d147b-6014-4343-b980-06c6ff695e22.wav",
+      "fr": {}
+    },
+    {
+      "id": "5c12e8bc-7d5f-4fbc-ae44-42ee259fde49",
+      "title": "Helena - Mauvais garçon (Remix)",
+      "note": "",
+      "year": "2025",
+      "releaseDate": "2025-07-17",
+      "audio": "/media/87868356-571e-45c6-b93e-524f9a4b2f6f.wav",
+      "fr": {}
+    },
+    {
+      "id": "1627fc42-654c-4ab3-912b-903dea4958c3",
+      "title": "OWLY - Meva",
+      "note": "",
+      "year": "2025",
+      "releaseDate": "2025-09-27",
+      "audio": "/media/326d8bc0-0290-4b13-851f-ed45d0b10915.mp3",
+      "fr": {}
+    },
+    {
+      "id": "7e50f12b-82ec-44bf-9c1d-d11b92437008",
+      "title": "OWLY - You Can't Hide",
+      "note": "",
+      "year": "2025",
+      "releaseDate": "2025-11-23",
+      "audio": "/media/b0188e96-3be3-4014-8980-bd75419e9a8c.wav",
+      "fr": {}
+    },
+    {
+      "id": "c33c8ec6-2ff0-4f82-8b61-b2c38fd97166",
+      "title": "Swedish House Mafia - Miami 2 Ibiza (Remix)",
+      "note": "",
+      "year": "2026",
+      "releaseDate": "2026-03-26",
+      "audio": "/media/d3041348-ae62-42fe-bfee-251585c41277.wav",
+      "fr": {}
+    },
+    {
       "id": "714e5667-d0aa-4414-bf19-57eba48e9589",
       "title": "OWLY - Dusk",
       "note": "",
@@ -218,7 +281,7 @@
       "note": "",
       "year": "2026",
       "releaseDate": "2026-10-12",
-      "audio": "/media/8e94a34f-3d68-4140-8e7b-466235220c1e.mp3",
+      "audio": "/media/0181fe30-666f-4201-9687-22453d2cfc97.mp3",
       "fr": {}
     },
     {
